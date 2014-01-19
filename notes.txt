@@ -1,0 +1,58 @@
+
+Outside in
+
+create a cookbook for every service you have
+
+components that go with it
+
+take components and apply design patern to them 
+
+Application Cookbook Pattern: each component to a recipe
+
+common system is a private recipe:
+* not exposed to the end user
+* should never be in the run_list of the node
+* Always included into other recipes
+* documented in the code for other developers
+
+Public recipes: 
+* put in the runlist of the node
+* documented in the readme
+* documented in the metadata
+(straight forward)
+
+common_systm : users etc
+
+Data Driven Cookbook Pattern: reusable cookbooks
+-> change the behaviour of recipe
+*attributes
+	easy
+	configura
+
+*databags
+	org level
+	base cookbooks
+
+*encrypted data bags
+	sensitive
+
+
+Well encapsulated cookbooks: 
+-> DONT USE ROLES -> org data
+-> use a recipe
+
+*Validate data bags*
+
+LWRP
+
+Library Cookbook Pattern: 
+-> no recipies
+-> LWRPs
+-> definitions
+
+Wrapper Cookbooks
+-> super lightwight
+-> attribute overrides
+-> delegates to other cookbooks 
+-> NOT A FORK
+
